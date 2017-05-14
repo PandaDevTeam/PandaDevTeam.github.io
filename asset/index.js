@@ -66,7 +66,6 @@ $(window).scroll(function() {
     } else {
         nav.removeClass('fixed-top');
     }
-
 });
 
 
