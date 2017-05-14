@@ -72,7 +72,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4 m-b-20">
-            <img src="https://www.evoweb.com.my/images/weareevolution.png" alt="panda-developpers-about" />
+            <img src="./imgs/wearepandadev.png" alt="panda-developpers-about" />
           </div>
           <div class="col-md-8">
             <div class="row">
@@ -85,43 +85,50 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-md-6 col-sm-6 col-xs-12 about-item">
-                <div class="about-item-icon">
-                  <div class="icon web-development">
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="about-item">
+                  <div class="about-item-icon">
+                    <div class="icon web-development"></div>
+                  </div>
+                  <div class="about-item-des">
+                    <h3>FULLY INTERACTIVE WEBSITE</h3>
+                    <p>We create fully responsive / functional website to all devices.</p>
                   </div>
                 </div>
-                <div class="about-item-des">
-                  <h3>FULLY INTERACTIVE WEBSITE</h3>
-                  <p>We create fully responsive / functional website to all devices.</p>
-                </div>
               </div>
-              <div class="col-md-6 col-sm-6 col-xs-12 about-item">
-                <div class="about-item-icon">
-                  <div class="icon"></div>
-                </div>
-                <div class="about-item-des">
-                  <h3>CREATIVE IDEAS</h3>
-                  <p>Our developers are creative individuals that can help to create valuable website.</p>
+              <div class="col-md-6 col-sm-6 col-xs-12 ">
+                <div class="about-item">
+                  <div class="about-item-icon">
+                    <div class="icon web-development"></div>
+                  </div>
+                  <div class="about-item-des">
+                    <h3>CREATIVE IDEAS</h3>
+                    <p>Our developers are creative individuals that can help to create valuable website.</p>
+                  </div>
                 </div>
               </div>
 
-              <div class="col-md-6 col-sm-6 col-xs-12 about-item">
-                <div class="about-item-icon">
-                  <div class="icon"></div>
-                </div>
-                <div class="about-item-des">
-                  <h3>UNIQUE DESIGN</h3>
-                  <p>We listen to your needs to create a unique website to stand out from your competitors.</p>
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="about-item">
+                  <div class="about-item-icon">
+                    <div class="icon web-development"></div>
+                  </div>
+                  <div class="about-item-des">
+                    <h3>UNIQUE DESIGN</h3>
+                    <p>We listen to your needs to create a unique website to stand out from your competitors.</p>
+                  </div>
                 </div>
               </div>
 
-              <div class="col-md-6 col-sm-6 col-xs-12 about-item">
-                <div class="about-item-icon">
-                  <div class="icon"></div>
-                </div>
-                <div class="about-item-des">
-                  <h3>ADVANCED SKILLS</h3>
-                  <p>Our developers are fully equipped with the latest skills in the industry.</p>
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="about-item">
+                  <div class="about-item-icon">
+                    <div class="icon web-development"></div>
+                  </div>
+                  <div class="about-item-des">
+                    <h3>ADVANCED SKILLS</h3>
+                    <p>Our developers are fully equipped with the latest skills in the industry.</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -145,7 +152,7 @@
           <div class="section-header text-center">
             <h2> portfolio </h2>
           </div>
-          <div class="section-portfolio">
+          <div class="section-portfolio col-xs-12">
             <div id="portfolio-slideshow">
               <div class="item">
                 <a data-modal-image="./asset/fortex.jpg" href="javascript:void(0)" class="modal portfolio-image" data-modal-title="Fortex" data-modal-url="//fortex.com.vn/">
@@ -219,15 +226,15 @@
                   <h2 class="color-white">Contact Me</h2>
           </div>
           <div class="col-lg-6 animated animate-from-left">
-          <h3 class="color-white">Drop a line to us. Your word is most important to us.</h3>
-          <form role="form" method="post">
+            <h3 class="color-white">Drop a line to us. Your word is most important to us.</h3>
+            <form id="news-letter-form" role="form" method="post">
                       <div class="form-group">
                           <label for="name">Name</label>
-                          <input type="text" placeholder="Your Name" id="name" class="form-control">
+                          <input type="text" placeholder="Your Name" id="name" class="form-control" required>
                       </div>
                       <div class="form-group">
                           <label for="email">Email</label>
-                          <input type="text" placeholder="Your Email" id="email" class="form-control" required>
+                          <input type="email" placeholder="Your Email" id="email" class="form-control" required>
                       </div>
                       <div class="form-group">
                           <label for="phone">Phone</label>
@@ -235,16 +242,15 @@
                       </div>
                       <div class="form-group">
                           <label>Message</label>
-                          <textarea placeholder="Message" id="message" rows="8" cols="40"></textarea>
+                          <textarea placeholder="Message" id="message" rows="8" cols="40" required></textarea>
                       </div>
                       <button type="submit" class="btn_box_register">Send</button>
-                      </form>
-                  </div>
-                  <div class="col-lg-6 text">
-                    <h3>Keep in touch.</h3>
-                    <p>Wow, you in the end of road. Now, update some awesome tips and tricks weekly through sending me a message. I'm try everyday to get the best for you, friends. Thanks for coming.</p>
-                  </div>
-
+                </form>
+            </div>
+            <div class="col-lg-6 text">
+              <h3>Keep in touch.</h3>
+              <p>Wow, you in the end of road. Now, update some awesome tips and tricks weekly through sending me a message. I'm try everyday to get the best for you, friends. Thanks for coming.</p>
+            </div>
         </div>
       </div>
     </section>
@@ -252,75 +258,26 @@
   <footer>
     <div class="container">
       <div class="row">
-        Footer here
+        <div class="col-md-6 text-center-xs m-b-20">
+            <span>Copyright © 2016. Made with love by Panda Developers.</span>
+        </div>
+        <div class="col-md-6 text-right text-right-xs">
+
+        </div>
       </div>
     </div>
   </footer>
   <div class="hidden-xs" id="particles-js"></div>
 
-  <div class="modal fade" id="modal-success">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <div class="popup_body">
-                        <div class="alert alert-success" role="alert">Thank you for leaving information!.</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
   <link href="https://fonts.googleapis.com/css?family=Pacifico|Fjalla+One" rel="stylesheet">
   <script src="./asset/jquery.min.1.11.0.js"></script>
-
   <script src="./asset/particles.min.js"></script>
   <script src="./asset/owl.carousel.min.js"></script>
   <script src="./asset/index.js"></script>
+
   <link rel="stylesheet" href="./asset/index.css">
   <link rel="stylesheet" href="./asset/clone.css">
 
-  <script src="./js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="./css/main.min.css">
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
-  <script>
-  $(document).ready(function () {
-    $(".btn_box_register").bind('click', function (e) {
-        debugger;
-        if ($.trim($("#name").val()) != '' && $.trim($("#email").val()) != '' && $.trim($("#phone").val()) != '' && $.trim($("#message").val()) != '') {
-            e.preventDefault();
-            var url = 'https://docs.google.com/forms/d/e/1FAIpQLScfxD4linNmMmfa-M6NIBfP0rzKyxXbK1AdPZGvaQnImGeqQw/formResponse';
-            debugger;
-            var data = {
-                'entry.1995838144': $("#name").val(),
-                'entry.1451497906': $("#email").val(),
-                'entry.684954047': $("#phone").val(),
-                'entry.2010962721': $('#message').val()
-            };
-            $.ajax({
-                'url': url,
-                'method': 'POST',
-                'dataType': 'XML',
-                'data': data,
-                'statusCode': {
-                    0: function () {
-                        $("#name").val('');
-                        $("#email").val('');
-                        $("#phone").val('');
-                        $("#message").val('');
-                        $("#modal-success").modal();
-                    },
-                    200: function () {
-                      $("#name").val('');
-                      $("#email").val('');
-                      $("#phone").val('');
-                      $("#message").val('');
-                        $("#modal-success").modal();
-                    }
-                }
-
-            });
-        }
-    });
-  });
-  </script>
 </body>
 </html>
