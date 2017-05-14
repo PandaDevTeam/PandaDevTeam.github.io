@@ -1,0 +1,101 @@
+/*
+	Project Sass Theme
+	Author: PandaDev
+	Version: 0.0.1
+*/
+h2, h3, h4 {
+  font-family: 'Fjalla One', sans-serif; }
+
+body {
+  font-family: "Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  line-height: 1.5; }
+
+body p {
+  font-family: "Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  line-height: 1.5;
+  font-size: 16px; }
+
+.section-header h2 {
+  padding: 50px;
+  font-size: 40px; }
+
+#contact h3 {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 25px; }
+
+#contact form label {
+  font-size: 20px;
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  font-weight: 600; }
+
+#contact form input {
+  height: 40px;
+  border-radius: 5px;
+  width: 100%; }
+  #contact form input:focus {
+    border: 1px solid #ffa500; }
+
+#contact form textarea {
+  border-radius: 5px;
+  width: 100%;
+  color: #000; }
+  #contact form textarea:focus {
+    border: 1px solid #ffa500; }
+
+#contact .text p {
+  margin-top: 30px;
+  font-size: 22px;
+  font-weight: 300; }
+
+#contact .btn_box_register {
+  cursor: pointer;
+  width: 100%;
+  display: inline-block;
+  background: #ffa500;
+  background: -webkit-linear-gradient(#ffa500, #ff4500);
+  background: -o-linear-gradient(#ffa500, #ff4500);
+  background: -moz-linear-gradient(#ffa500, #ff4500);
+  background: linear-gradient(#ffa500, #ff4500);
+  border-bottom: 2px solid #d0452a;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: white;
+  font-size: 24px;
+  padding: 10px 60px;
+  border-radius: 5px;
+  margin-bottom: 25px;
+  margin-top: 15px;
+  position: relative;
+  text-transform: uppercase; }
+  #contact .btn_box_register:focus {
+    text-decoration: none;
+    outline: none;
+    color: white; }
+  #contact .btn_box_register:hover {
+    background: #ffa500;
+    background: -webkit-linear-gradient(#ffa500, #eb4204);
+    background: -o-linear-gradient(#ffa500, #eb4204);
+    background: -moz-linear-gradient(#ffa500, #eb4204);
+    background: linear-gradient(#ffa500, #eb4204);
+    border-bottom: 2px solid #d0452a;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    text-decoration: none;
+    color: white !important;
+    cursor: pointer; }
+  #contact .btn_box_register .btn-wrap {
+    display: inline-block;
+    text-align: center;
+    width: 100%; }
+
+#modal-success .alert-success {
+  text-align: center;
+  margin-bottom: 0px; }
+
+#modal-success .modal-content {
+  top: 100px; }
