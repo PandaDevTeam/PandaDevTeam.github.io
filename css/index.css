@@ -227,7 +227,6 @@ label {
 
 section#skill {
     background-color: #2980B9;
-
     color: white;
 }
 
@@ -235,7 +234,6 @@ section#contact {
     background-image: url(./email_bg.jpg);
     background-size: cover;
     background-attachment: fixed;
-  
     color: white;
 }
 
