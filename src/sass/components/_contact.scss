@@ -23,6 +23,7 @@
     textarea {
       border-radius: 5px;
       width: 100%;
+      color: #000;
       &:focus {
         border: 1px solid #ffa500;
       }
@@ -80,5 +81,15 @@
           text-align: center;
           width: 100%
       }
+  }
+}
+
+#modal-success {
+  .alert-success {
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  .modal-content {
+    top: 100px;
   }
 }

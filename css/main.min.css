@@ -40,7 +40,8 @@ body p {
 
 #contact form textarea {
   border-radius: 5px;
-  width: 100%; }
+  width: 100%;
+  color: #000; }
   #contact form textarea:focus {
     border: 1px solid #ffa500; }
 
@@ -91,3 +92,10 @@ body p {
     display: inline-block;
     text-align: center;
     width: 100%; }
+
+#modal-success .alert-success {
+  text-align: center;
+  margin-bottom: 0px; }
+
+#modal-success .modal-content {
+  top: 100px; }

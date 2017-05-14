@@ -164,30 +164,24 @@
           </div>
           <div class="col-lg-6 animated animate-from-left">
           <h3 class="color-white">Drop a line to us. Your word is most important to us.</h3>
-          <form role="form">
+          <form role="form" method="post">
                       <div class="form-group">
                           <label for="name">Name</label>
                           <input type="text" placeholder="Your Name" id="name" class="form-control">
                       </div>
                       <div class="form-group">
                           <label for="email">Email</label>
-                          <input type="text" placeholder="Your Email" id="email" class="form-control">
+                          <input type="text" placeholder="Your Email" id="email" class="form-control" required>
                       </div>
                       <div class="form-group">
                           <label for="phone">Phone</label>
-                          <input type="text" placeholder="Your Phone" id="phone" class="form-control">
+                          <input type="text" placeholder="Your Phone" id="phone" class="form-control" required>
                       </div>
                       <div class="form-group">
                           <label>Message</label>
                           <textarea placeholder="Message" id="message" rows="8" cols="40"></textarea>
                       </div>
-                      <button type="submit" class="btn_box_register">Send
-                          <span>
-                              <div class="click-form"></div>
-                              <div class="click-form-fill"></div>
-                              <div class="click-form-img"></div>
-                          </span>
-                      </button>
+                      <button type="submit" class="btn_box_register">Send</button>
                       </form>
                   </div>
                   <div class="col-lg-6 text">
@@ -208,14 +202,69 @@
   </footer>
   <div class="hidden-xs" id="particles-js"></div>
 
+  <div class="modal fade" id="modal-success">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="popup_body">
+                        <div class="alert alert-success" role="alert">Thank you for leaving information!.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
   <link href="https://fonts.googleapis.com/css?family=Pacifico|Fjalla+One" rel="stylesheet">
   <script src="./asset/jquery.min.1.11.0.js"></script>
+
   <script src="./asset/particles.min.js"></script>
   <script src="./asset/owl.carousel.min.js"></script>
   <script src="./asset/index.js"></script>
-  <link rel="stylesheet" href="./css/main.min.css">
-  <link rel="stylesheet" href="./css/index.css">
   <link rel="stylesheet" href="./asset/index.css">
   <link rel="stylesheet" href="./asset/clone.css">
+
+  <script src="./js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./css/main.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <script>
+  $(document).ready(function () {
+    $(".btn_box_register").bind('click', function (e) {
+        debugger;
+        if ($.trim($("#name").val()) != '' && $.trim($("#email").val()) != '' && $.trim($("#phone").val()) != '' && $.trim($("#message").val()) != '') {
+            e.preventDefault();
+            var url = 'https://docs.google.com/forms/d/e/1FAIpQLScfxD4linNmMmfa-M6NIBfP0rzKyxXbK1AdPZGvaQnImGeqQw/formResponse';
+            debugger;
+            var data = {
+                'entry.1995838144': $("#name").val(),
+                'entry.1451497906': $("#email").val(),
+                'entry.684954047': $("#phone").val(),
+                'entry.2010962721': $('#message').val()
+            };
+            $.ajax({
+                'url': url,
+                'method': 'POST',
+                'dataType': 'XML',
+                'data': data,
+                'statusCode': {
+                    0: function () {
+                        $("#name").val('');
+                        $("#email").val('');
+                        $("#phone").val('');
+                        $("#message").val('');
+                        $("#modal-success").modal();
+                    },
+                    200: function () {
+                      $("#name").val('');
+                      $("#email").val('');
+                      $("#phone").val('');
+                      $("#message").val('');
+                        $("#modal-success").modal();
+                    }
+                }
+
+            });
+        }
+    });
+  });
+  </script>
 </body>
 </html>
