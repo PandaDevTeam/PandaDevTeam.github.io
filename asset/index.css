@@ -105,12 +105,12 @@ header {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  background-color: #040001;
 }
 header .container {
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
   align-items: center;
 }
 header .header-content {
