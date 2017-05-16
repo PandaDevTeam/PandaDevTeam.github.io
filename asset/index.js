@@ -6,6 +6,7 @@ var Site = {
     this.initOverLay();
     this.initTyper();
     this.initScrollTo();
+    this.initToggle();
   },
   initOverLay: function () {
     setTimeout(function(){
@@ -40,13 +41,10 @@ var Site = {
         $($(this).data('toggleXs')).slideToggle('medium');
     });
   },
-  init: function () {
-
-  }
 };
 
 jQuery(document).ready(function($) {
-
+    Site.init();
     $('input[type="submit"], input.btn, button').click(function() {
         $(this).blur();
     });
