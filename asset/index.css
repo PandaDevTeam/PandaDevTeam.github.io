@@ -224,11 +224,26 @@ label {
   text-transform: uppercase;
 }
 
-
 section#skill {
     background-color: #2980B9;
-
+    background-image: url(./bgd-skills.jpg);
+    background-size: cover;
+    background-attachment: fixed;
     color: white;
+}
+.our-skill .skill {
+    margin-bottom: 50px;
+}
+.skill>img {
+    font-size: 0;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 150px;
+    z-index: 999;
 }
 
 section#contact {
