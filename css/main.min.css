@@ -98,3 +98,13 @@ body p {
 
 #modal-success .modal-content {
   top: 100px; }
+
+nav h1:hover {
+  cursor: pointer; }
+
+nav .main-navbar .nav-item .nav-link:hover {
+  cursor: pointer;
+  color: #ffa500; }
+
+nav .main-navbar .nav-item.active .nav-link {
+  color: #ffa500; }

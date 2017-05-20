@@ -25,12 +25,6 @@ jQuery(document).ready(function($) {
     $('input[type="submit"], input.btn, button').click(function() {
         $(this).blur();
     });
-    $('[data-scroll]').click(function(event) {
-        event.preventDefault();
-        $('body').stop().animate({
-            scrollTop: ($($(this).data('scroll')).offset().top) + 'px'
-        }, 1000);
-    });
 
     $('[data-toggle]').on('click', function() {
         $($(this).data('toggleXs')).slideToggle('medium');

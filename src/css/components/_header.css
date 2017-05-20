@@ -1,0 +1,5 @@
+nav h1:hover {
+  cursor: pointer; }
+
+nav .main-navbar .nav-item .nav-link:hover {
+  cursor: pointer; }
