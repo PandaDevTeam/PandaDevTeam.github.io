@@ -32,26 +32,22 @@
  		<meta name="revisit-after" content="1 day" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Panda Developer Team" />
-    <meta property="og:image" content="https://pandadevteam.github.io/asset/agent-panda-shirt-600x433.jpg" />
-    <meta property="og:image" content="https://pandadevteam.github.io/asset/agent-panda-shirt-600x433.jpg" />
+    <meta property="og:image" content="https://pandadevteam.github.io/imgs/agent-panda-shirt-600x433.jpg" />
+    <meta property="og:image" content="https://pandadevteam.github.io/imgs/agent-panda-shirt-600x433.jpg" />
     <meta property="og:url" content="https://pandadevteam.github.io" />
     <meta property="og:description" content="Panda Developer Team, Thiết kế và lập trình website" />
     <meta property="og:site_name" content="Panda Developer Team" />
     <style>.loader_overlay {position: fixed;z-index: 9999;width: 100%;height: 100%;left: 0;top: 0;background-color: #fff;-webkit-transition: all .1s ease;-o-transition: all .1s ease;transition: all .1s ease;opacity: 1;visibility: visible;}.loader_overlay.loaded {opacity: 0;visibility: hidden;z-index: -2;}</style>
-    <style type="text/css">
-    	.st0{fill:none;stroke:#4b4e53;stroke-width:6;stroke-miterlimit:10;}
-    	.st1{fill:none;stroke:#4b4e53;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-    </style>
 </head>
 
 <body>
   <div class="loader_overlay"><div id="loader"></div><div class="loader-section section-left"></div><div class="loader-section section-right"></div></div>
-  <nav class="nav" style="">
+  <nav data-nav class="nav" style="">
       <div class="container text-right">
-          <a class="pull-left" data-scroll="header">
-            <h1 class="navbar-brand"><img src="imgs/pandadev.png" alt="" class="img-responsive"></h1>
+          <a class="pull-left" href="javascript:void(0)">
+            <h1 data-scroll="header" class="navbar-brand">Panda Developers</h1>
           </a>
-          <div class="main-navbar dis-inline clearfix hidden-sm hidden-xs" id="navbar-ul">
+          <div class="main-navbar dis-inline clearfix hidden-sm hidden-xs">
               <ul class="main-navbar p-0">
                   <li class="nav-item dis-inline">
                       <a class="nav-link" data-scroll="#about">About Us</a>
@@ -70,7 +66,7 @@
           </div>
       </div>
   </nav>
-  <header>
+  <header data-section="header">
     <div class="container relative">
       <div class="header-content text-center relative">
         <div class="wrapper-typer">
@@ -79,13 +75,13 @@
       <div data-scroll="#about" class="header-show-more text-center absolute hidden">
         <span>MORE</span>
         <div class="icon-arrows">
-          <img src="./asset/arrow.png">
+          <img src="./imgs/arrow.png">
         </div>
       </div>
     </div>
   </header>
   <main>
-    <section id="about" data-name='scrolling'>
+    <section id="about" data-section="#about">
       <div class="container">
         <div class="row">
           <div class="col-md-4 m-b-20">
@@ -154,7 +150,7 @@
         </div>
       </div>
     </section>
-    <section id="skill" data-name='scrolling'>
+    <section id="skill" data-section="#skill">
       <div class="container">
         <div class="row">
           <div class="section-header text-center">
@@ -238,7 +234,7 @@
         </div>
       </div>
     </section>
-    <section id="portfolio" data-name='scrolling'>
+    <section id="portfolio" data-section="#portfolio">
       <div class="container">
         <div class="row">
           <div class="section-header text-center">
@@ -247,62 +243,62 @@
           <div class="section-portfolio col-xs-12">
             <div id="portfolio-slideshow">
               <div class="item">
-                <a data-modal-image="./asset/fortex.jpg" href="javascript:void(0)" class="modal portfolio-image" data-modal-title="Fortex" data-modal-url="//fortex.com.vn/">
-                  <img src="./asset/fortex.jpg" alt="fortex" />
+                <a data-modal-image="./imgs/fortex.jpg" href="javascript:void(0)" class="modal portfolio-image" data-modal-title="Fortex" data-modal-url="//fortex.com.vn/">
+                  <img src="./imgs/fortex.jpg" alt="fortex" />
                   <span class="portfolio-hover"></span>
                 </a>
                 <h3 class="portfolio-title">
                   Fortex
                 </h3>
-                <a class="portfolio-link" href="//fortex.com.vn/" target="_blank">
+                <a class="portfolio-link" href="http://fortex.com.vn/" target="_blank">
                   fortex.com.vn
                 </a>
               </div>
               <div class="item">
-                <a data-modal-image="./asset/luchop.jpg" href="javascript:void(0)" class="modal portfolio-image" data-modal-title="Fortex" data-modal-url="//luchop.com/">
-                  <img src="./asset/luchop.jpg" alt="luchop" />
+                <a data-modal-image="./imgs/luchop.jpg" href="javascript:void(0)" class="modal portfolio-image" data-modal-title="Fortex" data-modal-url="//luchop.com/">
+                  <img src="./imgs/luchop.jpg" alt="luchop" />
                   <span class="portfolio-hover"></span>
                 </a>
                 <h3 class="portfolio-title">
                   Luc Hop
                 </h3>
-                <a class="portfolio-link" href="//luchop.com/" target="_blank">
+                <a class="portfolio-link" href="http://luchop.com/" target="_blank">
                   luchop.com
                 </a>
               </div>
               <div class="item">
-                <a data-modal-image="./asset/maithithanh.jpg" href="javascript:void(0)" class="modal portfolio-image" data-modal-title="Fortex" data-modal-url="//www.maithithanh.com/">
-                  <img src="./asset/maithithanh.jpg" alt="maithithanh" />
+                <a data-modal-image="./imgs/maithithanh.jpg" href="javascript:void(0)" class="modal portfolio-image" data-modal-title="Fortex" data-modal-url="//www.maithithanh.com/">
+                  <img src="./imgs/maithithanh.jpg" alt="maithithanh" />
                   <span class="portfolio-hover"></span>
                 </a>
                 <h3 class="portfolio-title">
                   Mai Thi Thanh
                 </h3>
-                <a class="portfolio-link" href="//www.maithithanh.com/" target="_blank">
+                <a class="portfolio-link" href="http://www.maithithanh.com/" target="_blank">
                   www.maithithanh.com
                 </a>
               </div>
               <div class="item">
-                <a data-modal-image="./asset/truman.jpg" href="javascript:void(0)" class="modal portfolio-image" data-modal-title="Fortex" data-modal-url="//truman.com.vn/">
-                  <img src="./asset/truman.jpg" alt="truman" />
+                <a data-modal-image="./imgs/truman.jpg" href="javascript:void(0)" class="modal portfolio-image" data-modal-title="Fortex" data-modal-url="//truman.com.vn/">
+                  <img src="./imgs/truman.jpg" alt="truman" />
                   <span class="portfolio-hover"></span>
                 </a>
                 <h3 class="portfolio-title">
                   Truman
                 </h3>
-                <a class="portfolio-link" href="//truman.com.vn/" target="_blank">
+                <a class="portfolio-link" href="http://truman.com.vn/" target="_blank">
                   truman.com.vn
                 </a>
               </div>
               <div class="item">
-                <a data-modal-image="./asset/mimi.jpg" href="javascript:void(0)" class="modal portfolio-image" data-modal-title="Fortex" data-modal-url="mimidistrict.com">
-                  <img src="./asset/mimi.jpg" alt="mimidistrict" />
+                <a data-modal-image="./imgs/mimi.jpg" href="javascript:void(0)" class="modal portfolio-image" data-modal-title="Fortex" data-modal-url="mimidistrict.com">
+                  <img src="./imgs/mimi.jpg" alt="mimidistrict" />
                   <span class="portfolio-hover"></span>
                 </a>
                 <h3 class="portfolio-title">
                   Truman
                 </h3>
-                <a class="portfolio-link" href="//mimidistrict.com/" target="_blank">
+                <a class="portfolio-link" href="http://mimidistrict.com/" target="_blank">
                   mimidistrict.com
                 </a>
               </div>
@@ -311,7 +307,7 @@
         </div>
       </div>
     </section>
-    <section id="contact" data-name='scrolling'>
+    <section id="contact" data-section="#contact">
       <div class="container">
         <div class="row">
           <div class="section-header text-center">
@@ -351,10 +347,22 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 text-center-xs m-b-20">
-            <span>Copyright © 2016. Made with love by Panda Developers.</span>
+            <span>Copyright © 2016. Made with love by <a href="/" title="Panda developers">Panda Developers</a>.</span>
+
         </div>
         <div class="col-md-6 text-right text-right-xs">
-
+          <div class="dis-inline m-r-10">
+            <img src="imgs/pandadev.png" alt="Panda-developer team" style="margin-bottom:-10px;" class="img-responsive">
+          </div>
+          <div class="dis-inline m-r-10">
+            <span>facebook</span>
+          </div>
+          <div class="dis-inline m-r-10">
+            <span>Google+</span>
+          </div>
+          <div class="dis-inline m-r-10">
+            <span>GitHub</span>
+          </div>
         </div>
       </div>
     </div>
@@ -362,11 +370,11 @@
   <div class="hidden-xs" id="particles-js"></div>
 
   <link href="https://fonts.googleapis.com/css?family=Pacifico|Fjalla+One" rel="stylesheet">
-  <script src="./asset/blugin.js"></script>
-  <script src="./asset/index.js"></script>
-  <link rel="stylesheet" href="./asset/index.css">
-  <link rel="stylesheet" href="./asset/clone.css">
-  <link rel="stylesheet" href="./asset/circle.css">
+  <script src="./js/blugin.js"></script>
+  <script src="./js/index.js"></script>
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/clone.css">
+  <link rel="stylesheet" href="./css/circle.css">
 
   <script src="./js/main.js"></script>
   <link rel="stylesheet" href="./css/main.min.css">

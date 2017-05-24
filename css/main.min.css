@@ -106,5 +106,5 @@ nav .main-navbar .nav-item .nav-link:hover {
   cursor: pointer;
   color: #ffa500; }
 
-nav .main-navbar .nav-item.active .nav-link {
+nav .main-navbar .nav-item .nav-link.active {
   color: #ffa500; }
