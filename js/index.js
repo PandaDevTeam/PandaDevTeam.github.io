@@ -7,6 +7,7 @@ var Site = {
     this.initToggle();
     this.initSlidePortFolio();
     this.imageReady();
+    this.portfolio();
   },
   initOverLay: function () {
     setTimeout(function(){
@@ -72,6 +73,26 @@ var Site = {
       if(!$(this).attr('alt')){
         $(this).attr('alt', alt + '_' + index);
       }
+    });
+  },
+
+  portfolio : function(){
+    $('body').on('click', '.portfolio-image', function(e){
+        $('body').css('overflow','hidden');
+        e.preventDefault();
+
+        $('#CloseModal').click(function(){ 
+            $(this).parents('#ModalPortolio').hide();
+            $('body').css('overflow','auto');
+        });
+
+        $('#ModalPortolio').removeClass('hidden').show();
+
+        $('#ModalPortolio picture img').attr('src', $(this).attr('data-modal-image'));
+        $('#ModalPortolio #ModalTitle ').html($(this).attr('data-modal-title'));
+        $('#ModalPortolio #modal__link').attr('href',$(this).attr('data-modal-url'));
+        $('#ModalPortolio #modal__link').html($(this).attr('data-modal-url'));
+        $('#ModalPortolio #modal__link__2').attr('href',$(this).attr('data-modal-url'));
     });
   }
 };
