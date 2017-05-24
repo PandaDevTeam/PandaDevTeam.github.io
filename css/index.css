@@ -223,6 +223,8 @@ section#skill {
 }
 .our-skill .skill {
     margin-bottom: 50px;
+     float: none;
+     margin:0 auto 50px auto;
 }
 .skill>img {
     font-size: 0;
@@ -234,6 +236,15 @@ section#skill {
     transform: translateY(-50%);
     width: 150px;
     z-index: 999;
+}
+
+@media (max-width:991px) and (min-width:481px) {
+  .our-skill .skill.c100 {
+    font-size: 170px;
+  }
+  .skill>img {
+    width: 100px;
+  }
 }
 
 section#contact {
@@ -346,6 +357,13 @@ footer {
 	.pull-left-xs {float: left} .pull-none-xs{float: none; } .pull-none-xs {float: none;}
 
 }
+
+@media (max-width:599px) {
+    .fix-max-599 {
+      width: 50%;
+    }
+}
+
 @media (max-width: 480px){
 	.col-xxs-12 {width: 100% } .col-xxs-11 {width: 91.66666667% } .col-xxs-10 {width: 83.33333333% } .col-xxs-9 {width: 75% } .col-xxs-8 {width: 66.66666667% } .col-xxs-7 {width: 58.33333333% } .col-xxs-6 {width: 50% } .col-xxs-5 {width: 41.66666667% } .col-xxs-4 {width: 33.33333333% } .col-xxs-3 {width: 25% } .col-xxs-2 {width: 16.66666667% } .col-xxs-1 {width: 8.33333333% }
 	.text-left-xxs{text-align:left;}.text-right-xxs{text-align:right;}.text-center-xxs{text-align:center;}
