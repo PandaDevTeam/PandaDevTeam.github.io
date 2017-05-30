@@ -53,10 +53,10 @@ var Site = {
   },
   initSlidePortFolio: function () {
     $("#portfolio-slideshow").owlCarousel({
-        items : 4,
+        items : 3,
         pagination : false,
         navigation : true,
-        itemsDesktop: [1199, 4],
+        itemsDesktop: [1199, 3],
         itemsDesktopSmall: [979, 3],
         itemsTablet: [768,2],
         itemsTabletSmall: [480, 1],
