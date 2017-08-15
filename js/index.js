@@ -55,7 +55,7 @@ var Site = {
     $("#portfolio-slideshow").owlCarousel({
         items : 3,
         pagination : false,
-        navigation : true,
+        navigation : false,
         itemsDesktop: [1199, 3],
         itemsDesktopSmall: [979, 3],
         itemsTablet: [768,2],
